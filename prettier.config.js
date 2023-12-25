@@ -18,6 +18,7 @@ const config = {
         {
             files: ['*.svelte'],
             options: {
+                semi: false,
                 parser: 'svelte',
                 svelteSortOrder: 'options-scripts-markup-styles',
                 svelteStrictMode: false,
