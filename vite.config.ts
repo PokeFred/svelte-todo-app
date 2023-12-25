@@ -1,19 +1,18 @@
-import {defineConfig} from "vite"
-import type {CommonServerOptions} from "vite"
-import {svelte} from "@sveltejs/vite-plugin-svelte"
+import { defineConfig } from 'vite'
+import type { CommonServerOptions } from 'vite'
+import { svelte } from '@sveltejs/vite-plugin-svelte'
 
 const serverConfig: CommonServerOptions = {
-    host: "0.0.0.0",
+    host: '0.0.0.0',
     port: 3000,
-    strictPort: true
+    strictPort: true,
 }
 
-export default defineConfig( {
+export default defineConfig({
     server: serverConfig,
     preview: serverConfig,
     build: {
-        outDir: "build"
+        outDir: 'build',
     },
-    plugins: [svelte()]
+    plugins: [svelte()],
 })
-
